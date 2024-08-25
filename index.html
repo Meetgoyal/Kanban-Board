@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="https://kit.fontawesome.com/9d99c9881c.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="./index.css">
+</head>
+
+<body>
+    <header>
+        <div class="box1">
+            <div class="category" data-priority="p1"></div>
+            <div class="category" data-priority="p2"></div>
+            <div class="category" data-priority="p3"></div>
+            <div class="category" data-priority="p4"></div>
+        </div>
+        <div class="box2">
+            <div class="action" id="add">+</div>
+            <div class="action" id="remove">X</div>
+        </div>
+        <div class="tasks-search">
+            <input type="text" placeholder="search title or ID"/>
+        </div> 
+    </header>
+
+    <section class="task-wrapper" data-delete-Enabled="true"></section>
+
+    <div class="modal hide">
+        <div class="left-section">
+            <textarea placeholder="Enter your task"></textarea>
+        </div>
+        <div class="right-section">
+            <div class="category p1 selected" data-category="p1"></div>
+            <div class="category p2" data-category="p2"></div>
+            <div class="category p3" data-category="p3"></div>
+            <div class="category p4"data-category="p4"></div>
+        </div>
+    </div>
+    <script src="./index.js"></script>
+</body>
+
+</html>
